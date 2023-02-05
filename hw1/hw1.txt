@@ -73,3 +73,9 @@ We also followed YAGNI, though somewhat loosely. We would each implement feature
 
 For another one of my courses, we were required to create a web app for the semester project. The instructor required us to present a UML diagram of our design before we started writing the code. We were asked to keep this UML diagram at a high level and not have minute implementation details in it.
 After we started writing the code for the project, since the UML diagram was high level, we did not have to update the UML diagram much by the end of the semester. 
+
+Total [10]: 10
+
+Please see https://www2.cs.uh.edu/~svenkat/spring2023sd/scores.pdf
+
+
