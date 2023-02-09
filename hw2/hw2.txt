@@ -40,29 +40,34 @@ For this program, we will be designing the Wordle game. In this game, the player
 
 The Wordle game will require an interactive and dynamic GUI for user input. This GUI will show the result of the player's guesses with colors, which will let the player know whether the letters of their guess were absent from the target word, or if present, if they were in the correct position or not. The backend will validate user input and provide the appropriate color feedback.
 
-The class diagram (HW2_CLASS_DIAGRAM.jpg) for this program includes three classes and 2 enums. One of the classes will be the GUI class, which will be responsible for letting the player input their guess, as well as for displaying the results. This class will dynamically detect whether the user has input all 5 letters or not. When 5 letters are detected, the GUESS button is activated. When there are fewer than 5 letters, the GUESS button is disabled.
+The class diagram (HW2_CLASS_DIAGRAM.jpg) for this program includes three classes and 2 enums. The WordleGameEngine class will be responsible for maintaining the state of the game and providing the logical part for the game. This class will store the target word of the game and all the guessed results. It will also have a status (an Enum) field; initially will be set to INPROGRESS. ‘validateGuess’ method will validate the guessed word against the target word. If the word is correct, the status field will be updated to WON. This class will have a method to return the number of guesses the player has attempted, depending on which, the success message will be displayed in GUI, in case the user wins. In the case that the player exhausts the number of attempts, the status will be updated to LOST.
 
-The Game class will be responsible for maintaining the state of the game. An instance of this class will be stored in the GUI class. The Game class will store the target word of the game and all the guessed results. It will also have a status (an Enum) field; initially will be set to INPROGRESS. The GUI class will pass the user inputs to the Game class’ "validateGuess" method, which will validate the input. If the word is correct, the status field will be updated to WON. The Game class will have a method to return the number of guesses the player has attempted, depending on which, the success message will be displayed in GUI, in case the user wins. In the case that the player exhausts the number of attempts, the status will be updated to LOST. 
+WordleGameUI class, which will be responsible for letting the player input their guess, as well as for displaying the results. This class will dynamically detect whether the user has input all 5 letters or not. When 5 letters are detected, the GUESS button is activated. When there are fewer than 5 letters, the GUESS button is disabled. This class will also have an instance of WordleGameEngine, and it will communicate with it to get the status of the game and validate the guessed word.
 
-The GuessResult class will have the guessed word for each attempt. And the color status (GREEN, YELLOW, or GRAY) of each letter. A list of GuessResult is stored in Game.
+The GuessedResult class will have the guessed word for each attempt. And the color status (GREEN, YELLOW, or GRAY) of each letter. A list of GuessResult is stored in Game.
 
 There are 2 enums, one for colors (GREEN, YELLOW, GRAY) and the other one is for game status (LOST, WIN, INPROGRESS).
 
 
 2. Discuss what language you would use.
 
-We will use Python3.* to create this game. Since this game does not require the speed performance or memory efficiency provided by lower level languages like C++ or Java, Python is sufficient. Another reason for selecting Python is that it is a relatively high-level language, hence the program will be easier to implement than it would be in a relatively lower-level language like C++ or Java. Additionally, we have designed this program to use classes, and Python supports OOP well.
+We will use Python3.* to create this game. The GUI for the game will be made using Tkinter, which is a Python library. Python was chosen because of both, personal as well as technical reasons.
 
-The GUI for the game will be made using Tkinter, which is a Python library. With Tkinter, we can add the color requirements as the specification of the game. Additionally, user input can be read dynamically, by checking for the user input every few milliseconds.
+Python is the only language that is common between us. One of us has experience in C++ and the other in Java. Other than that, one of us has experience with the Tkinter and the unittest modules, which will be helpful when we have to implement this design into code.
+
+On the technical side, since this game does not require the speed performance or memory efficiency provided by lower level languages like C++, Python is sufficient. Another reason for selecting Python is that it is a relatively high-level language, hence the program will be easier to implement than it would be in a relatively lower-level language like C++. Additionally, we have designed this program to use classes, and Python supports OOP well.
+
+We have decided to do this as a standalone game, Python has a comparatively shallow learning curve for doing GUI development than comparing solutions like Swing UI in Java. In Swing UI we have to use SwingWorker thread additionally to ensure the smoothness of the UI during a background processing.
+
+With Tkinter, we can add the color requirements as the specification of the game. Python has several other GUI libraries/interfaces available, such as PyQT, Kivy, PySide, PySimpleGUI, etc. If, for some reason, Tkinter does not work out while writing the code, we can quite easily pick one of the other interfaces. This also gives modularity. 
+
+Python has good and understandable documentation, and a good online presence where lots of questions are answered in forums.
 
 
 3. How do you plan to structure the program, what libraries would you use?
 
-There will be three classes: the GUI class, the Game class, and the GuessResult class. These all will have their own ".py" files, though they do not need to have separate files. Additionally, there will be a "main.py" file, which will be used to load/start the game.
-
 The GUI for the game will be made using the Python library, Tkinter. This class will contain an instance of the Game class.
 
-For testing, we will use the "unittest" module, provided by Python. It can be used to measure test coverage. We will need a file "test.py", where the unit tests will be written. These unit tests will be written in the form of functions. 
+For testing, we will use the ‘unittest’ module, provided by Python. It can be used to measure test coverage. We will need a file ‘test.py’, where the unit tests will be written. These unit tests will be written in the form of functions.
 
-To check the code coverage of the unit tests, we will use the "coverage" tool, which works well with the "unittest" module to calculate how much of the code has been covered by the unit tests.
-
+To check the code coverage of the unit tests, we will use the ‘coverage’ tool, which works well with the ‘unittest’ module to calculate how much of the code has been covered by the unit tests.
