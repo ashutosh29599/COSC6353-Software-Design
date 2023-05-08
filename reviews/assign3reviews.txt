@@ -1,0 +1,239 @@
+[Reviewed 03/29/23 05:03 AM MDT]
+synopsis: you're done
+
+details: 
+
+yay
+
+------------------------------------------------------------------------------
+[Reviewed 03/28/23 16:53 PM EEST]
+synopsis: a few things to improve
+
+details: 
+
+"each file focused only one implementing the fibonacci logic"
+
+Do you mean "each file focused only on one of the fibonacci implementations" ?
+
+Any where else DRY was used?
+
+Any other principles?
+
+Let's write a concluding paragraph.
+
+"code in python language" missing "the" before Python (P upper case as well)
+
+"used function decorator" missing "the" before function.
+
+------------------------------------------------------------------------------
+[Reviewed 03/28/23 07:25 AM EEST]
+synopsis: let's write
+
+details: 
+
+assign3.txt: Let's write. By now we should know what is expected, depth, insights, multiple short paragraphs, with focus on one idea, concept, or thought in each.
+
+------------------------------------------------------------------------------
+[Reviewed 03/27/23 13:33 PM EEST]
+synopsis: let's write
+
+details: 
+
+assign3.txt: Let's write.
+
+------------------------------------------------------------------------------
+[Reviewed 03/27/23 05:01 AM EEST]
+synopsis: let's reduce a bit further
+
+details: 
+
+Please see suggestions in files.
+
+Let's move forward to the questions in the assign3.txt file.
+
+------------------------------------------------------------------------------
+[Reviewed 03/26/23 13:12 PM EEST]
+synopsis: performance test
+
+details: 
+
+Let's write a test to check that the memoized version is at least 10 times faster than the recursive version
+
+------------------------------------------------------------------------------
+[Reviewed 03/26/23 07:01 AM EEST]
+synopsis: let's reduce code
+
+details: 
+
+Please see suggestions in files.
+
+Let's write a test to check that the memoized version is at least 10 times faster than the recursive version
+
+------------------------------------------------------------------------------
+[Reviewed 03/25/23 23:14 PM EET]
+synopsis: let's reduce code
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 03/25/23 10:24 AM EET]
+synopsis: reuse instead of recreate?
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 03/24/23 23:33 PM EET]
+synopsis: let's reduce code
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 03/24/23 13:04 PM EET]
+synopsis: let's refactor
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 03/24/23 05:38 AM EET]
+synopsis: let's keep it DRY
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 03/23/23 21:58 PM EET]
+synopsis: simple recursion should be simple
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 03/23/23 18:37 PM EET]
+synopsis: Let's keep it DRY
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 03/23/23 12:09 PM EET]
+synopsis: let's move forward to the next step
+
+details: 
+
+Please see suggestions in files.
+
+Let's move forward to the next step
+
+------------------------------------------------------------------------------
+[Reviewed 03/23/23 03:26 AM EET]
+synopsis: let's not refine tests in derived test class
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 03/22/23 07:21 AM EET]
+synopsis: let's keep it DRY
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 03/22/23 04:50 AM EET]
+synopsis: let's move forward to the next step
+
+details: 
+
+Please see suggestions in files.
+
+Let's move forward to the next step
+
+------------------------------------------------------------------------------
+[Reviewed 03/21/23 20:44 PM EET]
+synopsis: let's tweak it a bit
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 03/21/23 08:12 AM CET]
+synopsis: let's keep the tests DRY
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 03/20/23 16:56 PM EDT]
+synopsis: error prone and DRY
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 03/20/23 16:48 PM EDT]
+synopsis~: red or yellow in code coverage
+
+details:
+
+Please take a look at the code coverage and make sure the coverage shows 100%.
+After fixing the coverage (or ask for help if you need), please ask for review.
+
+------------------------------------------------------------------------------
+[Reviewed 03/20/23 05:13 AM MDT]
+synopsis: Let's keep it DRY and follow SRP
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 03/19/23 06:56 AM MDT]
+synopsis: YAGNI, and let's keep it DRY
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 03/18/23 19:34 PM MDT]
+synopsis: let's move forward to the next step
+
+details: 
+
+Please see suggestions in files.
+
+Let's move forward to the next step.
+
+------------------------------------------------------------------------------
+[Reviewed 03/18/23 05:59 AM MDT]
+synopsis: let's refactor
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 03/17/23 18:43 PM MDT]
+synopsis: missing tests.txt
+
+details: 
+
+Missing the tests.txt file.
+
+------------------------------------------------------------------------------

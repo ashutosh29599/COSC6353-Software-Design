@@ -1,0 +1,75 @@
+[Reviewed 04/19/23 20:23 PM EDT]
+synopsis: you're done
+
+details: 
+
+yay
+
+------------------------------------------------------------------------------
+[Reviewed 04/19/23 05:27 AM MDT]
+synopsis: a few things to revisit
+
+details: 
+
+1.
+
+"Lastly, we followed the YAGNI principle by writing minimum code that would solve our problem. Doing so reduces the occurrences of "
+
+We called it YAGNI, they call it fewest element. We should use the term they used and say that we called it YAGNI, or something like that.
+
+2.
+The discussion about coupling is disjoint. Please revisit this paragraph and think about the recommendations, yay, this is what we want to do, look how wonderful this is. However, there is a trade off, here it is, and it is important to balance these and not go overboard, etc. etc.
+
+------------------------------------------------------------------------------
+[Reviewed 04/18/23 05:41 AM MDT]
+synopsis: a few things to revisit
+
+details: 
+
+1.
+"Lastly, minimum code that solves our problem is " did we use another name for this rule in our discussions and reviews?
+
+2.
+
+"Here too, we did not follow TDD, so we spent..." There is a cause and effect here but the wording does not bring it out.
+
+"I have encountered situations where code that was originally used in..." what are the consequences of the suggestions made in this paragraph? For example, does this increase coupling which we also strive to reduce in good design?
+
+
+------------------------------------------------------------------------------
+[Reviewed 04/17/23 13:07 PM MDT]
+synopsis: a few things to revisit
+
+details: 
+
+1.
+
+"Lastly, minimum code that solves our problem is " is this related to TDD or something else, may be another name we used?
+
+2.
+
+"Despite not following TDD, we spent a considerable amount" Is "Despite" used correctly here?
+
+"I have encountered situations where code that was originally used in..." what are the consequences of the suggestions made in this paragraph?
+
+------------------------------------------------------------------------------
+[Reviewed 04/16/23 07:49 AM MDT]
+synopsis: good work so far
+
+details: 
+
+1.
+
+"When it comes to Software" lower case s in Software.
+
+"Lastly, minimum code that solves our problem is " is this related to TDD or something else, may be another name we used?
+
+Is "upgradation" a real word?
+
+Before the concluding paragraph, let's write a paragraph about what to do if conflicts arise between using these rules.
+
+2.
+
+I see check in by one member, but response from two here. I ask the member who added the part that does not belong to them delete and check in the file. Then let the member to who the response belongs take the time to write and check in their part. Will review this once those steps are taken.
+
+------------------------------------------------------------------------------

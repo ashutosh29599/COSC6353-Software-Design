@@ -1,0 +1,85 @@
+HW4 Due 11:59PM April 28
+
+***Please review the top part of ../hw1/hw1.txt***
+***There will be no reviews for this Homework***
+***Please remember to follow the things that were emphasized throughout this course on writing***
+***Please see the details in the requestReviews.txt file***
+
+Feel free to give answers collectively, and also if you want to, you can call out something specific to yourself different from your team member. Bring out your learnings and reflect on them here.
+
+1. What did you essentially learn in this course about design?
+
+Ashutosh Kumar
+
+During this course, I had an excellent opportunity to learn about designing software. I gained knowledge in a variety of topics, ranging from Object-Oriented Design (OOP) concepts and evolutionary design to Test-Driven Design (TDD), as well as various Design Principles and Design Patterns.
+
+In the various assignments we did in this course, I got first-hand experience of the fact that designing software is a process and not a one-time task. For the Fibonacci implementations, for instance, even though we had a working solution, we kept refactoring to improve our code.
+
+Before this course, I had not even heard of TDD. Now, not only do I understand the benefits of TDD, but I also have had a good experience in it as in all of our assignments, we followed TDD. Whenever we would either refactor the existing code or add new code, we would run our unit tests for regression testing. This gave us the confidence that our program was still working correctly even after the newly added changes. Because of following TDD, I also learned a lot about unit testing. For example, I did not know that we could have inheritance in the test classes; by doing this, we can reuse tests and thereby reduce duplication of code.
+
+I also learned about various Design Principles such as You Aren't Gonna Need It (YAGNI), Don’t Repeat Yourself (DRY), Open Closed Principle (OCP), Single Responsibility Principle (SRP), Single Level of Abstraction Principle (SLAP), Liskov’s Substitution Principle (LSP), and Dependency Inversion Principle (DIP). In the duration of this course, I was able to bring several design principles to practice. What surprised me was in how many places we got DRY as feedback; we were duplicating a lot of logic/code subconsciously. Additionally, I also learned about the Stable Dependency Principle, the Tell Don’t Ask Principle, and the Law of Demeter.
+
+Finally, I learned about several Design Patterns. I did not realize before learning these that throughout this course, we had been using design patterns. For example, in assignment 4, we used the Composite Method, the Mock Object, the Decorator, the Abstract Factory, and the Iterator design patterns.
+
+All in all, I learned a lot about software design in this course. Getting to apply what I learned in theory to practice has been invaluable. I am certain that what I learned will be helpful in my career.
+
+Sanjith Balachandran
+
+In this course, I learned about various design related aspects, including evolutionary design, OOP concepts, design modeling, test-driven development, design principles, and design patterns. I was able to learn these concepts both theoretically and practically by applying them in assignments and homework.
+
+Design should be considered an evolutionary process, rather than a one-time activity. Simply having an upfront design is not sufficient; it's crucial to continually update and refine our designs as we progress. In this way, a design can better serve its intended purpose and continue to evolve with the changing requirements.
+
+There are two levels of design: strategic design and tactical design. Strategic design is a high-level approach that focuses on the overall architecture and structure of the system, while tactical design is a low-level approach that focuses on the implementation details. In Homework 2, we created a class diagram for a Wordle Game, which is an example of strategic design. The class diagram provided a high-level view of the system and its components, which helped us better understand the problem. However, when we implemented the system, the system design deviated from the upfront design. This is because design is an iterative process. As we learn more about the problem, we may need to make changes to our design. This is why it is important to be flexible and to be willing to evolve our design as we go.
+
+We followed TDD throughout all the assignments. There are many benefits of TDD, one of which is that it serves as documentation for tactical design. By looking at the tests, we can easily understand the intention of the function being tested. The tests reveal the input parameters, the expected output of the function, and what should happen in negative scenarios.
+
+I also learned about OOP concepts in this course and had the opportunity to practice some of them in the assignments, such as abstraction, encapsulation, and polymorphism. For instance, in Assignment 3, all the implementations of the Fibonacci sequence followed an implicit abstraction of the Fibonacci function. We also utilized encapsulation when we used the seed as a function attribute in the get_a_random_word_given_a_seed function in the Wordle game. Furthermore, we practiced polymorphism in the base test module by testing different implementations by varying the fibonacci functions. Inheritance will result in tight coupling; so, it should be used carefully and thoughtfully.
+
+In homework 2, we created a class diagram for the Wordle game where I practiced modeling classes and relationships. When establishing relationships between classes, we preferred using aggregation over composition. This is because aggregation allows for greater flexibility and reusability of the contained objects.
+
+In our assignments, we practiced TDD, which allowed us to receive feedback early in the development process. By continuously running tests, we gained greater confidence in our code and were able to catch errors more quickly when refactoring. For instance, when implementing the tally function in Assignment 1, we performed several rounds of refactoring, and after each change, we would run the tests again. This process helped us to identify and correct any mistakes more efficiently.
+
+Writing tests led us to develop more modular methods, resulting in code that was more cohesive and had fewer dependencies. By breaking down our code into smaller, independent units, we were able to test each one individually and ensure that they functioned correctly. An example of this is the word_picker module in the Wordle game, which consisted of four functions, each with a single responsibility. We arrived at this design by creating test cases for the module beforehand.
+
+In this course, I gained a deep understanding of various design principles and their benefits in software development. These principles help to reduce coupling and increase cohesion, leading to maintainable code in the long run. I learned about foundational design principles, including the Single Responsibility Principle (SRP), You Ain't Gonna Need It (YAGNI), Don't Repeat Yourself (DRY), the Open-Closed Principle (OCP), the Liskov Substitution Principle (LSP), and the Dependency Inversion Principle (DIP). Additionally, I learned about other important principles such as the Acyclic Dependency Principle, the Single Level of Abstraction Principle, the Stable Dependency Principle, and the Stable Abstraction Principle. Throughout the assignments in this course, we applied several of these principles in practice, including DRY, SRP, YAGNI, OCP, DIP and SLAP. For instance, we applied the SRP in assignment 4 by creating separate modules for each vendor to return their responses.
+
+Finally, I learned about design patterns in this course. Several design patterns were discussed, and we had the opportunity to use some of them. For example, we applied the compose method pattern in our fourth assignment, where we created a separate function to display the rental price response to the user. It is important to remember that design patterns are not something to be forced. Instead, the design should evolve into a design pattern as the project progresses.
+
+Overall, this course helped me learn a lot about software design. Some of them which I have learned before, but this course has more depth and practical application to apply them while learning. And some of them were new to me. I hope to apply whatever I learnt from this course in my future work.
+
+
+2. What are some of the general guidelines you would follow when designing?
+
+n this course, we both learnt a great deal, as mentioned above. We take home many lessons. Below, we write about some guidelines that we will follow when designing.
+
+First and foremost, design is not a one-time activity; it is an evolutionary process. Simply having an upfront design is not sufficient; it is crucial to continually update and refine our designs as we progress. By doing so, we can ensure that our designs serve their intended purpose effectively and continue to evolve with changing requirements.
+
+We must come up with a strategic design to get a sense of direction about the problem. It also helps to get early observations and feedback. Then, evolving the design as we learn more about the problem is the key to a good design.
+
+Following Test Driven Development (TDD) helps a lot in software design. Writing tests leads to methods that are more modular, resulting in code that is more cohesive and has fewer dependencies. Tests also serve as documentation of the tactical design. TDD also allows us to refactor and extend our code with confidence, as we can simply run the unit tests to check for regression. This helps us respond to changing requirements easily and leads to a highly maintainable application.
+
+Code coverage is a metric to measure the amount of code that is executed during automated tests. By increasing code coverage, we can identify untested code, reduce the risk of undetected bugs, and improve code quality. Although higher code coverage can improve our code quality and reduce maintenance costs by catching errors early in the development process, high code coverage does not necessarily mean that our code is good or error free; we may yet be in need of refactoring and manual testing.
+
+Refactoring enables us to simplify and eliminate code smells, thereby streamlining our design and enhancing code readability and maintainability. Although refactoring can be time-consuming, it is a worthwhile investment for software projects.
+
+Code should reveal the developer's intentions so that it can be easily understood by others. To achieve this, we must use more meaningful names for variables, methods, classes, and modules, among others. When writing code, the focus should be on making it easy to read, rather than just easy to write.
+
+According to the Keep It Simple, Stupid (KISS) principle, we should aim to write clear, concise code rather than overly complex or clever code. By using the simplest solution to solve a problem, the code becomes more readable, easier to maintain, and less prone to errors.
+
+The You Aren’t Gonna Need It (YAGNI) principle guides us to focus on writing the minimal amount of code necessary to solve the immediate problem at hand. Instead of coding for potential future features, we should prioritize writing only the essential code needed to pass current tests.
+
+The Don’t Repeat Yourself (DRY) principle emphasizes the importance of removing duplicate code and reusing existing code. By doing so, we can increase code efficiency, reduce the risk of errors, and save time during maintenance and updates.
+
+By following the Single Responsibility Principle (SRP), we can ensure that each class or module has a clear and cohesive purpose. This makes it easier to make changes to the codebase without causing unintended side effects or having to modify multiple areas of the code.
+
+The Open-Close Principle (OCP) says that our code should be open for extension, but closed for modifications. What this means is that when we add a new feature to our application, we should be able to do so without having to change existing code. Not following OCP will not only lead to an increase in the time and effort it takes to add new features, but it can also introduce bugs.
+
+The Dependency Inversion Principle (DIP) promotes loose coupling between classes. It allows classes to be implemented, tested, and maintained separately. By following DIP, we can write code that is more flexible, and stable.
+
+By following the Liskov Substitution Principle (LSP), we can ensure that objects of a superclass can be replaced with objects of a subclass without breaking the program. Adhering to LSP ensures that software systems are flexible and extensible, allowing for easier maintenance and modification.
+
+The Single Level of Abstraction Principle (SLAP) suggests that our classes, methods/functions should have only a single level of abstraction. That is, the class or function should be doing only one thing and not multiple. SLAP allows our code to be more readable and maintainable.
+
+When working with design patterns, it's best to allow them to evolve naturally rather than forcing them where they do not belong; adding design patterns just for the sake of adding them will make the code unnecessarily complex and error prone. Design patterns are intended to be solutions to recurring problems, but they should not be used as a one-size-fits-all approach. Instead, carefully consider the problem at hand and choose the most appropriate pattern or combination of patterns to solve it.
+
+In conclusion, by applying these principles and guidelines, we can create more efficient, readable, and maintainable code. We believe these guidelines will serve us well in our future endeavors in software development.

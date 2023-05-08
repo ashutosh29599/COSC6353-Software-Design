@@ -1,0 +1,123 @@
+[Reviewed 02/08/23 09:51 AM CET]
+synopsis: you're done
+
+details: 
+
+yay
+
+------------------------------------------------------------------------------
+[Reviewed 02/08/23 05:49 AM CET]
+synopsis: do not show the default values of cardinality
+
+details: 
+
+Please remove 1 since that is the default cardinality.
+
+------------------------------------------------------------------------------
+[Reviewed 02/07/23 16:50 PM CET]
+synopsis: a few things to look at
+
+details: 
+
+Diagram:
+
+Shaded diamond (composition) is the most restrictive and better to avoid at this level of design; prefer non-shaded diamond (aggregation) instead.
+
+Please remove 1 since that is the default cardinality.
+
+Color and Status seem to be standing alone without being related to anything else.
+
+------------------------------------------------------------------------------
+[Reviewed 02/07/23 12:54 PM CET]
+synopsis~: let's not create a version control on top of the version control
+
+details: 
+
+The version control keeps versions of documents. We don't have to create a version control on top of that. Please delete the jpg files and have one file without v1, v2, etc. in its name.
+
+Let's do a quick review after these changes. Please modify the requestReview.txt file and check it in as soon as you are ready and I will do a review well before the next scheduled review cycle.
+
+2.
+
+Good details.
+
+3.
+
+Good details here.
+
+------------------------------------------------------------------------------
+[Reviewed 02/06/23 06:04 AM CET]
+synopsis: let's rework the diagram
+
+details: 
+
+Please show relationships between classes and the cardinality of the relationships. As presented, the classes are not related to one another. Where possible, show the relationships using lines instead of entry into classes as fields.
+
+Minimize the details in fields. If something can be shown as a relationship instead of a field, please choose that.
+
+Text:
+
+2.
+
+Every single technical reason given in favor of Python may also apply to other languages. Why are *we* selecting Python over the other languages?
+
+------------------------------------------------------------------------------
+[Reviewed 02/05/23 09:50 AM CET]
+synopsis: let's revisit a few parts
+
+details: 
+
+Diagram:
+
+Please use domain specific names instead of generic names (like GUI, Game, etc.) Names should help us relate to the problem at hand.
+
+Please dhow relationships between classes and the cardinality of the relationships.
+
+Minimize the details in fields. If something can be shown as a relationship instead of a field, please choose that.
+
+Text:
+
+1.
+
+The details presented here will change as we design, but are adequate for this level of design.
+
+2.
+
+Let us discuss the reasons to choose a particular language. There are other languages that can be used, why specifically are we choosing this language? We should convey that here.
+
+3.
+
+"There will be three classes: the GUI class" Please remove details from this part that should instead be in part 1.
+
+------------------------------------------------------------------------------
+[Reviewed 02/04/23 04:39 AM MST]
+synopsis: good start. Let's bring in the details in layers
+
+details: 
+
+Diagram:
+
+Here let us present a UML class diagram instead of a flowchart.
+
+Let us show the relationships between the classes and the cardinality between the relationships - using the UML notation. Please see the most recent videos.
+
+Text:
+
+1.
+
+Let's start with a very short introductory paragraph about the program, summarizing what it is that we plan to work on.
+
+Then, let us provide reasoning for design decisions, why and then what.
+
+Before diving into what each class or groups of methods will be, let us given an overview of what things are, how they are related, and how that helps to solve the problem. Then we can discuss the details of each part. Think of this as describing the big picture and then the details. Please refer to the diagram when presenting the big picture.
+
+2.
+
+Let us discuss the reasons to choose a particular language. There are other languages that can be used, why specifically are we choosing this language? We should convey that here.
+
+3.
+
+This is not related to part 1. In this part, let us discuss about how we plan to structure the code - directories, files. Also, what libraries we will use for the language we choose in part 2 and what testing libraries we plan to use.
+
+
+------------------------------------------------------------------------------

@@ -1,0 +1,70 @@
+[Reviewed 02/01/23 08:11 AM MST]
+synopsis: you're done
+
+details: 
+
+yay
+
+------------------------------------------------------------------------------
+[Reviewed 02/01/23 03:18 AM MST]
+synopsis~: please add a blank line between paragraphs
+
+details: 
+
+Right now we see a clump of text with no paragraph separations. Have you read a book where the entire page is text with no blank lines?
+
+Please add blank lines to separate paragraphs.
+
+Let's do a quick review after these changes. Please modify the requestReview.txt file and check it in as soon as you are ready and I will do a review well before the next scheduled review cycle.
+
+------------------------------------------------------------------------------
+[Reviewed 01/31/23 05:07 AM MST]
+synopsis: let's revisit for flow
+
+details: 
+
+1.
+
+Please spellcheck.
+
+"XP emphasizes both not using pattern until it’s needed and evolving your way into a pattern." Please revisit this sentence, does not seem to make sense as it is. Dropping the word "both" may make better sense. Also, please rephrase "evolving your way."
+
+
+" Avoid irreversibility." This does not fit into the paragraph about refactoring and needs focus separately in its own paragraph.
+
+Please revisit each paragraph and make sure they have one though, idea, or concept and do not mix multiple things into one.
+
+The paragraph about Metaphor seems to stick out with no real flow or connection to what is being discussed. Need to connect why this is important to what is being discussed.
+
+As I read through, these apper to be radom thoughts thrown together. We need to bring a good flow, build a narrative arc to start from an introduction, through the short paragraphs, to a concluding paragraph. Think of the flow of writing, the different details working together, instead of sticking out.
+
+
+Please revisit to being a good narrative flow.
+
+A short introduction paragraph. Details that build on a central theme, one at a time, in short paragraphs, then a final concluding paragraph.
+
+
+2.
+
+Sanjith: Nice work and learnings.
+
+Ashutosh: Let's bring in some more reflections, in multiple short paragraphs.
+
+------------------------------------------------------------------------------
+[Reviewed 01/30/23 05:34 AM MST]
+synopsis: let's restructure
+
+details: 
+
+1.
+
+Please avoid bullet points. Instead, please write in multiple short paragraphs, where each paragraphs focuses on one idea, concept, or thoughts. Start with a short introductory paragraph, then multiple paragraphs, and then a summary or conclusion paragraph.
+
+Please spellcheck.
+
+2.
+Same name appears multiple times. Instead, place the name once and write multiple paragraphs before that heading of the name.
+
+It will be great to expand the last paragraph to bring more insights.
+
+------------------------------------------------------------------------------

@@ -1,0 +1,222 @@
+[Reviewed 04/13/23 07:47 AM MDT]
+synopsis: any other patterns
+
+details: 
+
+Any other patterns?
+
+------------------------------------------------------------------------------
+[Reviewed 04/12/23 06:24 AM MST]
+synopsis: principles
+
+details: 
+
+1. Did we use DIP (sorry mistyped it as DRY in the previous review)
+
+------------------------------------------------------------------------------
+[Reviewed 04/11/23 06:47 AM MST]
+synopsis: good so far
+
+details: 
+
+assign4.txt:
+
+1. Did we use DRY?
+
+2. Any other patterns?
+
+3. Also, is there any constraint as to where the vendors can be placed?
+
+4. Good
+
+------------------------------------------------------------------------------
+[Reviewed 04/10/23 06:13 AM MDT]
+synopsis: nice work
+
+details: 
+
+Nice work.
+
+Let's focus on the assign4.txt questions.
+
+------------------------------------------------------------------------------
+[Reviewed 04/09/23 12:31 PM MDT]
+synopsis: SLAP and naming
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 04/09/23 07:46 AM MDT]
+synopsis: let's make the output human friendly
+
+details: 
+
+Let's make the output of the program human friendly.
+
+------------------------------------------------------------------------------
+[Reviewed 04/08/23 18:57 PM MDT]
+synopsis: a few things to improve
+
+details: 
+
+Please see suggestions in files.
+
+Let's write a main program that asks the user for the number of days and prints the result. Let's write a run task to easily run the program.
+paver - runs test
+paver run - runs main
+
+------------------------------------------------------------------------------
+[Reviewed 04/08/23 16:07 PM MDT]
+synopsis: let's refactor
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 04/08/23 10:18 AM MDT]
+synopsis: good so far
+
+details: 
+
+Good so far.
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 04/08/23 07:58 AM MDT]
+synopsis~: a few things to revisit
+
+details: 
+
+Please see suggestions in files.
+
+Let's do a quick review after these changes. Please modify the requestReview.txt file and check it in as soon as you are ready and I will do a review well before the next scheduled review cycle.
+
+------------------------------------------------------------------------------
+[Reviewed 04/07/23 02:55 AM PDT]
+synopsis: YAGNI
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 04/06/23 22:03 PM EDT]
+synopsis: let's take the next step
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 04/06/23 05:13 AM EDT]
+synopsis: let's clean up a bit
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 04/05/23 10:57 AM EDT]
+synopsis: let's move forward to the next step
+
+details: 
+
+Let's move forward.
+
+------------------------------------------------------------------------------
+[Reviewed 04/05/23 06:06 AM EDT]
+synopsis~: good work so far
+
+details: 
+
+Good work so far. Please see suggestions in files.
+
+Let's do a quick review after these changes. Please modify the requestReview.txt file and check it in as soon as you are ready and I will do a review well before the next scheduled review cycle.
+
+------------------------------------------------------------------------------
+[Reviewed 04/04/23 18:05 PM EDT]
+synopsis: let's take the next step
+
+details: 
+
+Please see suggestions in files.
+
+Let's take the next step
+
+------------------------------------------------------------------------------
+[Reviewed 04/04/23 17:28 PM EDT]
+synopsis: Minimum does not mean arbitrary
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 04/04/23 06:41 AM EDT]
+synopsis~: minimum code
+
+details: 
+
+Please see suggestions in files.
+
+Let's do a quick review after these changes. Please modify the requestReview.txt file and check it in as soon as you are ready and I will do a review well before the next scheduled review cycle.
+
+------------------------------------------------------------------------------
+[Reviewed 04/03/23 21:05 PM EDT]
+synopsis: let's revisit a few things
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 04/03/23 05:10 AM EDT]
+synopsis~: let's take the next step
+
+details: 
+
+Let's take the next step.
+
+Let's do a quick review after these changes. Please modify the requestReview.txt file and check it in as soon as you are ready and I will do a review well before the next scheduled review cycle.
+
+------------------------------------------------------------------------------
+[Reviewed 04/02/23 17:23 PM EDT]
+synopsis: how do we know the order?
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 04/02/23 06:13 AM CDT]
+synopsis~: reveal intention
+
+details: 
+
+Please see suggestions in files.
+
+Let's do a quick review after these changes. Please modify the requestReview.txt file and check it in as soon as you are ready and I will do a review well before the next scheduled review cycle.
+
+------------------------------------------------------------------------------
+[Reviewed 04/01/23 20:57 PM CDT]
+synopsis: free rental?
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 04/01/23 04:18 AM CDT]
+synopsis~: let's change direction a bit
+
+details: 
+
+Please see suggestions in files.
+
+Let's do a quick review after these changes. Please modify the requestReview.txt file and check it in as soon as you are ready and I will do a review well before the next scheduled review cycle.
+
+------------------------------------------------------------------------------

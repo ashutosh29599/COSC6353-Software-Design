@@ -1,0 +1,373 @@
+[Reviewed 02/21/23 08:03 AM MST]
+synopsis: you're done
+
+details: 
+
+yay
+
+------------------------------------------------------------------------------
+[Reviewed 02/20/23 04:37 AM MST]
+synopsis: let's bring out our experiences
+
+details: 
+
+assign1.txt:
+
+1.
+
+This part feels so detached from sharing a learning experience. It sounds like we are telling someone what good is out there rather than showing what we really learned by way of doing. This could have been written by anyone who has read a book or listen to a lecture. This part is about our learnings and reflection, what did we learn by way of what we observed, experienced.
+
+2.
+
+ok
+
+3.
+
+ok
+
+------------------------------------------------------------------------------
+[Reviewed 02/19/23 05:28 AM MST]
+synopsis: good work so far
+
+details: 
+
+Good work so far.
+
+Let's focus on the questions in assign1.txt.
+
+------------------------------------------------------------------------------
+[Reviewed 02/18/23 05:54 AM MST]
+synopsis: a few things to improve
+
+details: 
+
+Entered RIVER and hit return, nothing happens. The hitting return should be equivalent to pressing Guess.
+
+Console is still printing
+IndexError: list index out of range
+
+After win, game should exit when user presses the button on the win message dialog.
+
+------------------------------------------------------------------------------
+[Reviewed 02/17/23 18:36 PM MST]
+synopsis: error on console
+
+details: 
+
+Started the program.
+
+Entered FAVOR and clicked Guess.
+
+Saw this on the console:
+
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File ".../Python.framework/Versions/3.11/lib/python3.11/tkinter/__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File ".../assign1/src/wordle_ui.py", line 39, in <lambda>
+    window.bind('<KeyPress>', lambda e, *_: letter_entered(e, cells, guess_btn))
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ".../assign1/src/wordle_ui.py", line 59, in letter_entered
+    current_cell = find_the_current_cell(cells, current_row)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ".../assign1/src/wordle_ui.py", line 97, in find_the_current_cell
+    if len(labels[row][i].cget("text")) == 0:
+           ~~~~~~^^^^^
+IndexError: list index out of range
+
+
+------------------------------------------------------------------------------
+[Reviewed 02/17/23 11:43 AM MST]
+synopsis: good so far
+
+details: 
+
+Good so far.
+
+If user wins on the first row, display message. Likewise on the second row win.
+
+------------------------------------------------------------------------------
+[Reviewed 02/17/23 08:05 AM MST]
+synopsis~: can't see what I am typing
+
+details: 
+
+Started the program. Seeing white boxes. Typed r, nothing appears or what appears is invisible.
+
+Let's do a quick review after these changes. Please modify the requestReview.txt file and check it in as soon as you are ready and I will do a review well before the next scheduled review cycle.
+
+------------------------------------------------------------------------------
+[Reviewed 02/16/23 15:37 PM MST]
+synopsis: let's improve the UX
+
+details: 
+
+The Guess is hard to see when the button is disabled.
+
+Once the program starts, if I type r for example, nothing happens.
+It will be better, from the user experience point of view, that the rows
+are filled with labels instead of text boxes. When a user types a letter it can go into the first box, the next letter they type can go into the second box, etc. where each box may be a label or something like that. We should not expect the user to click on text boxes.
+
+When Guess is pressed, we need to color code the row, diable it, and enable the next row.
+
+If a user types r, it should apear as R.
+
+When I run
+
+paver ui
+
+I see on the console messages like
+
+1   HIToolbox                           0x00007ff816f00726 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 102
+2   HIToolbox                           0x00007ff816f002b8 _ZN15MenuBarInstance14EnableAutoShowEv + 52
+3   HIToolbox                           0x00007ff816ea4908 SetMenuBarObscured + 408
+...
+
+Any idea what's causing this?
+
+------------------------------------------------------------------------------
+[Reviewed 02/15/23 19:30 PM MST]
+synopsis: next step
+
+details: 
+
+Display six rows with the first row enabled. Guess button should be disabled.
+
+Need the ability to type a word and have it appear in the first row.
+Then pressing the Guess button should show the color coded response and enable the next row.
+
+When I run 
+
+paver ui
+
+I see on the console messages like
+
+1   HIToolbox                           0x00007ff816f00726 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 102
+2   HIToolbox                           0x00007ff816f002b8 _ZN15MenuBarInstance14EnableAutoShowEv + 52
+3   HIToolbox                           0x00007ff816ea4908 SetMenuBarObscured + 408
+....
+
+Any idea what's causing this?
+
+------------------------------------------------------------------------------
+[Reviewed 02/15/23 16:01 PM MST]
+synopsis: good so far
+
+details: 
+
+Good so far. Let's proceed to the next small step.
+
+------------------------------------------------------------------------------
+[Reviewed 02/15/23 14:05 PM MST]
+synopsis~: unable to run the UI easily
+
+details: 
+
+> paver ui
+Build failed: Unknown task: ui
+> 
+
+Let's do a quick review after these changes. Please modify the requestReview.txt file and check it in as soon as you are ready and I will do a review well before the next scheduled review cycle.
+
+------------------------------------------------------------------------------
+[Reviewed 02/14/23 19:54 PM MST]
+synopsis: let's take the next step
+
+details: 
+
+Please see suggestions in files.
+
+Let's incrementally create a GUI at this time.
+Please create a build task to display the GUI from the build automation:
+When build is run, execute the tests.
+when build ui is run, execute the GUI
+
+Let's take small steps here and review frequently.
+
+Please exclude the UI code from test coverage.
+
+------------------------------------------------------------------------------
+[Reviewed 02/14/23 15:35 PM MST]
+synopsis: good so far
+
+details: 
+
+Good so far.
+
+Please see suggestions in tests.txt.
+
+------------------------------------------------------------------------------
+[Reviewed 02/14/23 14:58 PM MST]
+synopsis: let's keep it DRY
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 02/14/23 12:03 PM MST]
+synopsis: let's refactor and move forward
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 02/14/23 07:16 AM MST]
+synopsis~: Good work so far
+
+details: 
+
+Good work so far.
+
+Please see suggestions in files.
+
+Nice work on taking the next step. We will rework the design a bit.
+
+-play first attempt with winning guess
+  We will design a play function so it takes three parameters:
+  1. A target
+  2. A guess
+  3. Number of the attempt
+  
+  It will return the number of attempts so far, array/list of Responses, game status (win, loss, or in progress), and message for the win, loss, or empty
+
+For this first test we will call play("FAVOR", "FAVOR", 0)
+The response should be:
+1 for number of attempts
+[EXACT, EXACT, EXACT, EXACT, EXACT] for response
+WIN for game status
+"Amazing" for the message
+
+------------------------------------------------------------------------------
+[Reviewed 02/13/23 10:19 AM MST]
+synopsis: let's reduce code further
+
+details: 
+
+In the pseudo code I gave there were fewer functions needed. let's revisit the code to reduce functions and also make this more functional, reducing ifs and else as much as possible.
+
+Also, along the way, let us take a look at the next step. Let's think of the next step. Please don't write a lot of code at this point. Write one test and minimum code for that next step. Then ask for a review. We can see if we are heading in a good direction and if so we can then proceed. Otherwise, we can change direction more easily without having written too much code. Please remember to list the test for the next step in tests.txt.
+
+------------------------------------------------------------------------------
+[Reviewed 02/13/23 05:05 AM MST]
+synopsis~: let's revisit naming
+
+details: 
+
+Please see suggestions in files.
+
+Let's do a quick review after these changes. Please modify the requestReview.txt file and check it in as soon as you are ready and I will do a review well before the next scheduled review cycle.
+
+------------------------------------------------------------------------------
+[Reviewed 02/12/23 15:10 PM MST]
+synopsis: let's try functional style
+
+details: 
+
+Let's avoid mutation where possible.
+
+------------------------------------------------------------------------------
+[Reviewed 02/12/23 10:56 AM MST]
+synopsis: time to refactor
+
+details: 
+
+Good work so far. Let's refactor.
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 02/12/23 08:53 AM MST]
+synopsis: how about an exception?
+
+details: 
+
+Please see suggestions in files. 
+
+------------------------------------------------------------------------------
+[Reviewed 02/12/23 04:57 AM MST]
+synopsis~: a few things to improve
+
+details: 
+
+Nice work so far.
+
+Please see suggestions in files.
+
+Please see suggestions in tests.txt.
+
+Let's do a quick review after these changes. Please modify the requestReview.txt file and check it in as soon as you are ready and I will do a review well before the next scheduled review cycle.
+
+------------------------------------------------------------------------------
+[Reviewed 02/11/23 19:13 PM MST]
+synopsis: strings are not a good representation
+
+details: 
+
+Strings are not a good representation. They are verbose, may have typos, and we are using a data type that is not meant for this, like numbers are not meant.
+
+How about ENUM MATCH with values EXACT, PRESENT, and NOMATCH as values?
+
+------------------------------------------------------------------------------
+[Reviewed 02/11/23 16:06 PM MST]
+synopsis: let's reveal intention
+
+details: 
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 02/11/23 09:16 AM CET]
+synopsis~: YAGNI and let us rethink about the design
+
+details: 
+
+Please see suggestions in files.
+
+Let's do a quick review after these changes. Please modify the requestReview.txt file and check it in as soon as you are ready and I will do a review well before the next scheduled review cycle.
+
+------------------------------------------------------------------------------
+[Reviewed 02/11/23 05:28 AM CET]
+synopsis~: good start. Let's take small steps
+
+details: 
+
+Good start.
+
+Please do not check in files like coverage.png.
+
+No need for readme.md and requirements.txt.
+
+Let's take small steps.
+
+Please delete the game directory.
+
+Let's start with the code I have created as a starting point.
+
+Let's work on only the tests mentioned in tests.txt and see how we proceed. Please implement the tests tests listed in the tests.txt file and minimum code for the tests to pass. Let's review right after that.
+
+A CI build has been setup for your project.
+You can see files related to this under assign1.
+
+How does this work?
+When you check in code, the CI build machine wakes up, fetches the latest 
+version of your code, and runs the file build.sh that is under your repository (above assign1). That file in turn runs the build scripts in your assign1 directory.
+
+In case you missed it, please read:
+<https://groups.google.com/g/uhcss23sd/c/2zkxY4s_-C4/m/feookVEEAQAJ>
+
+Also, please keep an eye on code coverage. To view the code coverage, please 
+run the build using the following command (do not click or double click, 
+instead open the command prompt, cd to your assign1 directory, and then run 
+from there).
+
+paver
+Then take a look at the file (using a browser):
+htmlcov/index.html
+
+
+Let's do a quick review after these changes. Please modify the requestReview.txt file and check it in as soon as you are ready and I will do a review well before the next scheduled review cycle.
+
+------------------------------------------------------------------------------
