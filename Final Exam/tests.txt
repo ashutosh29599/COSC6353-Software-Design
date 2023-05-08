@@ -1,0 +1,10 @@
+xcanary test
+
+xis_prime takes 1 returns false
+xis_prime takes a prime number (2) returns true
+xis_prime takes another prime number (3) returns true
+xis_prime takes a non-prime number (4) return false
+xis_prime takes another non-prime number (525) returns false
+
+xgenerate_list_of_prime_numbers_of_length takes 5 as input return [2, 3, 5, 7, 11]
+xgenerate_list_of_prime_numbers_of_length takes 10 as input return [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]

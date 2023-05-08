@@ -1,0 +1,35 @@
+xcanary test
+
+xparse_text parses true to boolean true
+xparse_text parses false to boolean false
+
+xget_response_for returns some response
+
+xis_spelling_correct calls get_response_for and parse_text
+xis_spelling_correct passes on exception to the callers
+
+xinput_reader reads file correctly
+xinput_reader reads an empty file
+xinput_reader tries to read a non-existent file raises exception
+
+xget_random_word_given_a_seed returns a random word from the provided word list
+xget_random_word_given_a_seed returns two different random words from the provided word list given the same seed
+
+xget_a_random_word called input_reader and get_random_word_given_a_seed
+xget_a_random_word raises exception if word_list is empty
+
+xscramble_word takes a words and scrambles it
+xscramble_word takes an empty strings and raises an exception
+
+xget_a_scrambled_word calls get_a_random_word and scramble_word
+
+xcalculate_score takes "monkey" as the answer for "monkey" target word returns 10
+xcalculate_score takes "fruit" as the answer for "fruit" target word returns 8
+
+xcalculate_score takes "monk" as the answer for "monkey" target word returns 7
+xcalculate_score takes "apply" as the answer for "apple" target word returns 7
+
+xcalculate_score takes "bat" as the answer for "monkey" target word returns 0
+xcalculate_score takes "ion" as the answer for "apple" target word returns 0
+
+xcalculate_score takes an empty string as the answer and returns 0

@@ -1,0 +1,23 @@
+xcanary test
+
+xparse text true
+xparse text false
+
+xget_response_for takes 'MOON' returns some response
+
+xis_spelling_correct calls get_response and parse
+xis_spelling_correct passes on the exception from get_response to the caller
+
+xread some input from a text file
+xread an empty text file
+xtry to read a non-existent file raises exception
+
+xget_spell_checked_lines send an empty list of lines return empty list
+xget_spell_checked_lines send list of one correct line returns the expected result
+xget_spell_checked_lines send list of two correct lines returns the expected result
+xget_spell_checked_lines send list of lines with some incorrect words
+xget_spell_checked_lines send list of two lines one correct one with incorrect words
+xget_spell_checked_lines send list of two lines both with some errors
+
+xspot_errors calls read_input and get_spell_checked_lines
+xspot_errors passes on the exception from read_input to the caller
