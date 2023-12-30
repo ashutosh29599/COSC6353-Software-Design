@@ -1,0 +1,76 @@
+Assign3: Due 11:59PM CT March 31
+
+***Please review the top part of ../hw1/hw1.txt***
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late. Please use as many reviews as you possibly can.***
+
+The Fibonacci series of numbers start with 1, 1, 2, 3, 5, 8, 13, 21, ...
+where values at position 0 and 1 are 1, and values at each position after
+that are a sum of values at the previous two positions.
+
+Write four implementations of a function to compute the Fibonacci number at a given position.
+
+Please start with one implementation at a time rather than rushing through all
+of them at the same time.
+
+The four implementations are described below:
+
+1. An imperative iteration. 
+  Given a position n, loop through totaling values until you reach the value for the given position.
+
+2. A functional iteration. 
+	  Given a position n, loop through totaling values until you reach the value for the given position. Avoid explicit mutability.
+
+3. A simple recursion.
+  Given a position, compute the value at a position using the expression fib(n - 1) + fib(n - 2).
+
+4. A memoized recursion.
+  Given a position, look up to see if the value has been precomputed and if so return that value. Otherwise, use recursion to compute the value.
+  
+Confirm that the memoized version is faster than the recursive version.
+
+Reuse as much code as possible.
+
+Please bring forward the practices, techniques, and tools you have learned so far. This includes: 
+Good code quality
+Lightweight design
+Minimum code
+Automated testing                                                         
+Code coverage
+Continuous integration
+
+Once you complete coding, please answer the following:
+
+1. What design principles did you use in this assignment? Discuss.
+
+In this assignment we were required to implement various methods to find the Fibonacci number at a given position. This presented us with a lot of opportunity to reuse code and make our program cohesive. Primarily, we used SRP and DRY design principles in this assignment with a sprinkle of YAGNI.
+
+We created different modules for different Fibonacci implementations, each file focusing on a single implementation; doing this, we followed SRP. Initially, when we created the tests, there was an instance where we violated the SRP- we were testing two different implementations in a single test file. We moved these tests to separate test classes, one for each implementation. For each implementation, we had to validate the input position. Adding this logic in the Fibonacci implementations would have been a violation of SRP, so we moved this logic to a separate module of its own.
+
+There were more examples of where DRY was followed. A lot of the code was reused. For instance, the recursive implementation was reused in the memoized implementation. A base test class was introduced for unit testing. The tests to check the correctness of the various implementation were implemented in this base class. For each implementation, we simply created a derived class and hence the code in the base class was able to be reused. The code for validating the position would have been repeated in all the implementations, however, we wrote that logic in a function in a separate module and reused it for all implementations using Python decorators. We used parameterized tests to test multiple test data with same test method; by doing this we did not have to write separate functions to test for different data as the code was simply reused. There was also an instance where we separated the test function to test the correctness to two methods -- one to test smaller position values and another to test larger position values. This was done because the recursive implementation was unable to calculate the Fibonacci number in a timely manner, so we wanted to override and ignore the larger position test. For this, we received feedback of DRY, so we removed this separate test function and decreased the value of the larger input position from 50 to 30.
+
+In the functional implementation, we were generating and storing the entire Fibonacci sequence, which was not required, hence we encountered YAGNI. To deal with this, we maintained only last two values in sequence.
+
+This assignment gave us a great opportunity to bring to practice various design principles. SRP, DRY, and YAGNI all helped us keep the code to a minimum and simple. Our program is quite modular and easy to understand, thanks to SRP. Following DRY, by reusing code, our program has become more maintainable and easier to test. Finally, YAGNI helped us remove unnecessary complexity, which would make the code harder to understand for the programmer and the extra overhead would slow down the program as well.
+
+2. Any surprises or things that you did not expect?
+
+The amount of repeated code that we subconsciously wrote without realizing was surprising. We got DRY as the feedback in unexpected places, but it made us think of clever solutions and learn new ways to code in the Python language. This was the first time we used Python decorators. We separated the validation logic from the main logic of the implementation and used function decorators to reuse the logic for all implementations.
+
+Similarly, reusing the code for the recursive implementation in the memoized implementation was something we did not think could be done. We were struggling to find a solution to pass the same function explicitly as a default parameter to itself. Finally, we did manage to do this by passing the 'None' value as default. When the value was 'None', we used the recursive implementation otherwise we used the implementation given as the parameter, i.e., the memoized implementation.
+
+That we could use base class to have the common test functions was a surprise. Almost all the tests were written only once and simply reused for each implementation.
+
+Overall, there were a lot of happy surprises in this assignment, which have, undoubtedly, made us better.
+
+Total [100]: 100
+All tests pass[10]:
+Test quality[10]:
+Coverage [10]:
+Imperative solution[5]:
+Functional solution[10]:
+Recursive solution[5]:
+Memoized solution is DRY[10]:
+Performance tests[10]:
+Code quality[10]:
+Design quality[10]:
+Response to questions[10]:

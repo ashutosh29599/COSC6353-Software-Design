@@ -1,0 +1,92 @@
+Assign4: Due 11:59PM CT April 14
+
+***Please review the top part of ../hw1/hw1.txt***
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late. Please use as many reviews as you possibly can.***
+
+
+We've been asked to build part of a travel booking application that will help a user get the best price for renting a car. The first version will only provide price for one type of car, at one location, so we don't have to concern ourselves with the car type or location at this time.
+
+We will assume that different renters will provide different web based API to get the prices. For the sake of simplicity we will have code for different vendors/renters return their name and a random price for rental per day.
+
+We want to design the program in a way that if new rental companies are added or existing companies are removed, the program will require no modification to accommodate the change. 
+
+If a request for price fails, the program will simply ignore the failure and continue to work with renters that do provide a rate.
+
+The program will ask the user for the number of days they want to rent. It will then print the per day price and the total price (not including tax, etc.), and the renter/vendor offering that lowest price among the vendors.
+
+We will design the program with a few example vendors: Avis, Budget, Dollar. After completing the program, see how adding a new vendor or removing an existing vendor works.
+
+
+
+After completing the coding part, please answer the following:
+
+1. What design principles did you use in this assignment? Discuss.
+
+In this assignment, we had to build a part of a travel booking application. This problem gave us the opportunity to use several design principles, such as DRY, SRP, YAGNI, OCP, DIP, and SLAP.
+
+We followed the DRY principle extensively in our program. First, since we needed the various vendors to all return their names and prices in the same format (within a dictionary in our case), we had them run their data through the vendor_response method, which helped us remove what would be repeated code. Additionally, within our test modules, we used 'parameterized expand', without which, we would have to write the same test multiple times for different input. Mocks were used to mock the vendor services in the tests. This mock service was used in multiple tests, so we extracted it out to a method of its own; this way all the tests that needed it could simply call that common method.
+
+We had two main modules related to our core logic, each with its own responsibility. The 'rental_price_finder' module was responsible for finding the lowest price among all the vendors, while the 'discover_vendor' module was responsible for dynamically discovering all the vendors available. By following the SRP principle, we were able to achieve cleaner code.
+
+At first, we used a vendor decorator function to annotate functions that would return vendor responses in each vendor module. However, we later removed this annotation logic as each vendor module only had one function, hence making this decorator redundant. This decision was made in accordance with the YAGNI principle.
+
+We also followed the OCP. Our program is written in such a way that if we were to add or remove vendors, ‘discover_vendor’ would automatically give the appropriate result. We need not adjust any previously written code to intake more or fewer vendors.
+
+In our program, we have followed DIP as well. The ‘get_lowest_price’ function expects a list of vendor functions. The vendor functions adhere to an implicit abstraction where they should not receive any input parameters and should return a response in a specific format that is expected by the get_lowest_price function.
+
+Lastly, SLAP was followed. A good example of where this was used is the ‘rental_price_finder_service’ module, where keep the two major functions, getting the lowest priced vendor and displaying it, separate. The latter is placed in a method of its own. Additionally, in ‘rental_price_finder’, ‘get_lowest_price’ and ‘fetch_data_from_a_service’ are kept in methods of their own.
+
+This assignment presented us with an excellent opportunity to bring to practice various design principles about which we have learnt. We had already used these principles in the previous assignments, but bringing them all together in this assignment has been a great learning experience. Because of the experience that we gained previously, we did a better job here at recognizing where we were violating (or would be violating) these principles.
+
+2. What design patterns did you use in this assignment? Discuss.
+
+In this assignment, we didn't have many opportunities to use many design patterns. We only used a design pattern when it was necessary and did not force it when it was not required. We used the Composite Method, the Mock Object, Decorator, and the Iterator Design Patterns.
+
+We implemented the Composite Method in our rental_price_finder_service module to obtain the user's input for the number of days the car is required and display the lowest priced vendors. In this module, we separated the logic related to displaying vendors into a separate function called display_vendors. We followed the SLAP design principle, which requires a function to have a single level of abstraction, when using this design pattern. We used this design pattern only when it was required by the design to avoid violating the SLAP design principle.
+
+For testing purposes, we needed to mock the vendor services, so we created a special method that would mock the real service; this is known as the Mock Object Pattern. This way, we did not have to rely on a real service for testing.
+
+In our tests, we have used the @parameterized.expand decorator to run multiple test cases with a single test method. This is a great example of a Decorator pattern, as the decorator modifies the behavior of the test method to accept a list of arguments and run the same test for each argument in the list.
+
+Lastly, we used the Iterator Pattern in our application. This was followed in the ‘discover_vendors’ module, where we used ‘sum()’ and ‘pkgutil.walk_packages()’. The latter is used to iterate over all the modules in a package/directory. In ‘rental_price_finder’, we used ‘list’ and ‘filter’, both of which also follow this pattern.
+
+We aimed to let design patterns evolve and form naturally rather than insert them forcefully simply for the sake of using them.
+
+3. What are the key strengths and weaknesses of the design? Discuss.
+
+Every design has its own set of strengths and weaknesses, and our design is no exception. Let's take a closer look at some examples of both.
+
+One strength of our design is that the final program contains minimal code, making it easier to test, read, and adapt to changes. We took a "minimum viable" approach by writing only the necessary code to pass each test as it was introduced. As a result, our program is lean and efficient.
+
+As much of our code is reused, making changes is straightforward. For example, we had written some of our tests using parameterized testing to handle cases where the only difference is the test data and expected output. While working on the assignment, our design evolved to include the ability to return multiple vendors in response. Thanks to our reuse of code, we only needed to make changes in one place to update all the test cases covered by the parameterized test.
+
+Another key strength is that our program follows OCP when it comes to adding/removing vendors; we can add and remove vendors and our program will automatically detect the vendors that are available currently.
+
+Although we believe that our design is generally strong, we have identified some constraints related to the dynamic discovery of vendors. For example, the current implementation may incorrectly detect a non-vendor module in the vendor package as a vendor, which could lead to unexpected behavior. Additionally, the current design does not support having multiple functions in a vendor module. Also there is a restriction on where we can place the vendor modules, it needs to be placed in the vendor package.
+
+4. Any surprises or things that you did not expect or learned specifically in this assignment?
+
+One surprising aspect of our code was how it can dynamically discover new vendors or remove existing vendors without requiring specific changes each time. This approach reduces the likelihood of accidental human errors that might occur if we had to manually add or remove vendors each time.
+
+In the process of implementing this dynamic vendor discovery, we learned how to dynamically find modules within a package and functions within those modules.
+
+Another surprising thing was using ‘assertRaisesRegex’ to test for exceptions. We were initially (and previously in the other assignments) using a much longer way to test this. Using ‘assertRaisesRegex’ simplifies our code.
+
+In ‘get_lowest_price’, we were getting the lowest priced vendors and modifying the dictionary and returning it. For this, we got a feedback suggesting to use the ** notation to unpack a dictionary. This was surprising, interesting, and helpful even though we did not need to use it by the end.
+
+
+Total [100]: 99
+Program runs [20]:
+Program fails gracefully when all vendors fail [10]:
+Removed all the vendors and ran the program. The output should be a display of error without display of a noisy stack trace.
+
+All tests pass [10]:
+Test quality [10]:
+Code coverage [10]:
+Design quality [10]:
+Code quality [10]:
+Dynamic discovery to seamlessly handle new vendors [10]:
+
+Response to questions [10—3, 3, 3, 1]: -1
+
+Abstract factory.
