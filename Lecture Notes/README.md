@@ -1,1 +1,1 @@
-## All lecture notes are in Letter size.
+### All lecture notes are in Letter size.
